@@ -6,9 +6,9 @@ import HomeHead from './components/HomeHead.vue'
 import SkyFooter from './components/SkyFooter.vue'
 import ALotOfCard1 from './components/ALotOfCard1.vue'
 import ALotOfCard2 from './components/ALotOfCard2.vue'
-import '../node_modules/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css'
-import '../node_modules/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js'
-import '../node_modules/bootstrap-5.3.0-alpha1-dist/css/amy.css'
+import './static/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css'
+import './static/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js'
+import './static/bootstrap-5.3.0-alpha1-dist/css/amy.css'
 Vue.config.productionTip = false
 Vue.component('SkyFooter', SkyFooter)
 Vue.component('ALotOfCard1', ALotOfCard1)
