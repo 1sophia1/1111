@@ -11,7 +11,7 @@ body {
 }
 .a1 {
     background-color:#f3f4f5!important;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	border-bottom:1px solid black ;
 }
 .orange{
@@ -49,11 +49,13 @@ nav a {
 }
 .long-box {
 	height: 28px;
-	width: 371px;
+	width: 680px;
 	background-image: linear-gradient(to left, #f6c431, #5fa0d8);
 	margin-left: 10px;
 }
-
+.about{
+	margin-top: 0px;
+}
 .box {
 	width: 28px;
 	height: 28px;
@@ -61,23 +63,27 @@ nav a {
 	background-color: #fac830;
 	margin-left: 10px;
 }
- 
 /* welcome style*/
 @media screen and (max-width: 768px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
 	.bottem{
-		margin-top: 100px;
 		font-size: 28px;
 		font-weight: 700;
-	
+		max-width: 1000px !important; 
+		background-color:#f3f4f5!important;
+	}
+	.bottem span{
+		font-size: 28px; 
 	}
   }
 
 @media screen and (min-width: 768px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
 	.bottem{
-		margin-top: 100px;
-		font-size: 36px;
 		font-weight: 700;
-	
+		background-color:#f3f4f5!important;
+		max-width: 1200px !important; 
+	}
+	.bottem span{
+		font-size: 36px;
 	}
   }
 .long-box1 {

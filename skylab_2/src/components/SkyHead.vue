@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <nav class="a1 navbar navbar-expand-md bg-dark navbar-dark fixed-top con">
+  <div class="fixed-top a1">
+    <nav class="navbar navbar-expand-md navbar-dark con">
       <div class="container">
       <!-- Brand -->
       <p class="text1">
@@ -11,7 +11,7 @@
         <span class="long-box1"></span>
       </p>
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button class="navbar-toggler magin2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon magin1"></span>
       </button>
       <!-- Navbar links -->
@@ -40,23 +40,16 @@ export default {
 </script>
 
 <style>
+
 .magin1{
   margin-top: 0px !important;
 }
-@media (max-width: 768px) {
-  .text1{
-    font-family: 'Microsoft YaHei';
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 20px;
-  }
+.magin2{
+  margin-right: 10px;
 }
-@media (min-width: 768px) {
-  .text1{
+.text1{
     font-family: 'Microsoft YaHei';
     font-size: 48px;
     font-weight: 700;
-    margin-top: 20px;
   }
-}
 </style>

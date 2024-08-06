@@ -1,5 +1,5 @@
 <template>
-    <div class="container bottem">
+    <div class="bottem container">
                     <span class="box ifshow1"> </span>
                     <span> WELCOM </span>
                     <span class="blue">TO </span>
@@ -17,12 +17,12 @@ export default {
 </script>
 
 <style>
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .ifshow1{
     display: none;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .ifshow1{
     display: inline-block;
   }

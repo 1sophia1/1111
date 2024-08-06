@@ -7,7 +7,7 @@
             <span>前端：梁婧宁
                 <a href="https://zzzheng.com/" target="_blank">郑赫</a>
                 闫正心
-                彭思齐（重构）
+                彭思齐
             </span>
             |
             <span>后端：<a href='https://zzzheng.com/' target="_blank">郑赫</a></span>
@@ -43,6 +43,9 @@ export default {
     text-align: center;
     margin-top: 50px;
 }
+.footer-1 p{
+   margin-bottom: 5px !important;
+}
 .footer p {
     color: #212121;
     height: 20px;
@@ -54,8 +57,9 @@ export default {
 }
 
 .upy-logo {
-    width: 1em;
-    vertical-align: top;
+    width: 1.1em;
+    margin-bottom: 2px;
+
 }
 
 .footer p a {

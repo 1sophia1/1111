@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <nav>
-      <SkyHead></SkyHead>
-      <HomeHead></HomeHead>
-    </nav>
+  <div class="vc1">
+    <SkyHead></SkyHead>
+    <HomeHead></HomeHead>
     <router-view></router-view>
     <SkyFooter></SkyFooter>
   </div>
@@ -29,5 +27,9 @@ nav {
       color: #bd88ee;
     }
   }
+}
+.vc1{
+  text-align: center;
+  margin-top: 120px;
 }
 </style>

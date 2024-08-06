@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <div class="ceshi1">
       <span class="span1"> 已毕业成员 </span>
     </div>
@@ -8,26 +8,29 @@
     </div>
     <div class="ceshi2">
     </div>
-      <div class="container">
-        <div class="row">
-            <div v-for="item1 in AllMembers1" :key="item1.id1" class="col-lg-3 col-sm-6 auto-margin" id="img1">
-              <div class="member-card">
-                <div class="member-img">
-                  <div class="member-lag"></div>
-                  <div class="v1">
-                      <img :src=" item1.Member[item1.indexx].url1 " alt="">
-                  </div>
-                  <span class="member-span">{{ item1.Member[item1.indexx].name }}</span>
-                  <div class="age">{{item1.id1}}{{item1.Member[item1.indexx].discipline}}</div>
-                </div>
-                <div class="member-text">
-                  <p class="p1">{{ item1.Member[item1.indexx].text }}</p>
-                </div>
+    <div class="container w2">
+      <div class="row">
+        <div v-for="item1 in AllMembers1" :key="item1.id1" class="v23">
+          <div class="w1"></div>
+        <div  class="col-lg-self-3 col-sm-self-6 auto-margin" id="img1">
+          <div class="member-card">
+            <div class="member-img">
+              <div class="member-lag"></div>
+              <div class="v1">
+                  <img :src=" item1.Member[item1.indexx].url1 " alt="">
               </div>
+              <span class="member-span">{{ item1.Member[item1.indexx].name }}</span>
+              <div class="age">{{item1.id1}}{{item1.Member[item1.indexx].discipline}}</div>
             </div>
+            <div class="member-text">
+              <p class="p1">{{ item1.Member[item1.indexx].text }}</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
-</div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
@@ -114,6 +117,11 @@ const buttonImg = new URL('@/assets/decoration/button.png', import.meta.url).hre
    75%{opacity: 0.75;}
    100%{opacity: 1;}
   }
+.w1{
+  width: 1px !important;
+  display: flex;
+  padding: 0px !important;
+}
 .span1{
 font-size: 36px;
 font-weight: 700;
@@ -139,10 +147,6 @@ font-weight: 700;
   height: 70px;
   width: 100%;
 }
-.member-lag{
-  width: 100%;
-  height: 125%;
-}
 .member-img{
     display: flex;
     justify-content: center;
@@ -164,13 +168,13 @@ font-weight: 700;
   width: 100%;
 }
 .v1{
+    z-index: 1;
     position: absolute;
-    height: 80%;
+    aspect-ratio: 1/1;
     width: 100%;
     box-shadow: 1px 1px 10px #bababa;
     border-radius: 10px;
     overflow: hidden;
-    top: -40%;
     transition: transform 0.8s; /* 添加过渡效果 */
     transform-origin: center center; /* 设置变换的原点为中心点 */
 }
@@ -184,9 +188,9 @@ font-weight: 700;
 .member-text{
     padding: 0px 20px;
     height: 0px;
-    overflow: hidden;
-    transition-property:height;
+    transition-property: height;
     transition-duration:0.8s;
+    overflow: hidden;
 }
 .member-card:hover{
   box-shadow: 1px 1px 10px black;
@@ -194,50 +198,77 @@ font-weight: 700;
 .member-card:hover .v1{
     box-shadow: 1px 1px 10px black;
 }
-@media (max-width: 576px) {
-  .buttonBx {
-  width: 30%;
+@media (max-width: 575px) {
+  .w2{
+    margin-top: 90px;
+    max-width: 320px !important;
+  }
+    .v23{
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  .col-sm-self-6{
+    display: flex;
+    align-items: center;
+    width: 100% ;
+  }
+  .auto-margin{
+    margin-top:0px ;
+    height: 400px;
+  }
+.buttonBx {
+  width: 25%;
   aspect-ratio: 1/1;
   margin: 20px auto 0;
   transition: .8s;
   }
   .member-card{
-    margin-left: 12.5%;
-    width: 75%;
     background-color:#54545422;
     border-radius: 20px;
-    margin-top: 30%;
     transition: all 0.8s;
     box-shadow: 1px 1px 10px #bababa;
   }
-  .ceshi4{
-  height: 20px;
-  width: 100%;
-}
-.ceshi2{
-  height: 50px;
-  width: 100%;
-}
-.member-span{
-    font-size: 18px;
+  .member-span{
+    font-size: 28px;
     font-weight: 600;
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
 }
 .age{
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
   font-weight:700;
   bottom: 10px;
-  width: 100%;
 }
 .member-card:hover .member-text{
-    height: 360px;
+    height: 250px;
+}
+.member-lag{
+  width: 100%;
+  height: 125%;
+}
+.v1{
+  top:-45%
 }
 }
-@media only screen and (max-width: 992px) and (min-width: 576px) {
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .v23{
+    display: flex;
+    width: 50% !important;
+  }
+  .col-sm-self-6{
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+  }
+  .auto-margin{
+    margin-top:0px ;
+    height: 420px;
+  }
 .buttonBx {
-  width: 15%;
+  width: 25%;
   aspect-ratio: 1/1;
   margin: 20px auto 0;
   transition: .8s;
@@ -246,7 +277,6 @@ font-weight: 700;
     width: 100%;
     background-color:#54545422;
     border-radius: 20px;
-    margin-top: 30%;
     transition: all 0.8s;
     box-shadow: 1px 1px 10px #bababa;
   }
@@ -265,13 +295,31 @@ font-weight: 700;
 .member-card:hover .member-text{
     height: 300px;
 }
+.member-lag{
+  width: 100%;
+  height: 125%;
 }
-@media (min-width: 992px) {
-.auto-margin{
-    margin-top:0px ;
+.v1{
+  top:-45%
+}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .v23{
+    display: flex;
+    width: 50% !important;
   }
-  .buttonBx {
-  width: 10%;
+  .col-sm-self-6{
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+  }
+  .auto-margin{
+    margin-top:0px ;
+    height: 400px;
+  }
+.buttonBx {
+  width: 15%;
   aspect-ratio: 1/1;
   margin: 20px auto 0;
   transition: .8s;
@@ -280,7 +328,107 @@ font-weight: 700;
     width: 100%;
     background-color:#54545422;
     border-radius: 20px;
-    margin-top: 30%;
+    transition: all 0.8s;
+    box-shadow: 1px 1px 10px #bababa;
+  }
+  .member-span{
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40px;
+}
+.age{
+  position: absolute;
+  font-size: 15px;
+  font-weight:700;
+  bottom: 10px;
+}
+.member-card:hover .member-text{
+    height: 210px;
+}
+.member-lag{
+  width: 100%;
+  height: 125%;
+}
+.v1{
+  top:-45%
+}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .v23{
+    display: flex;
+    width: 50% !important;
+  }
+  .col-sm-self-6{
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+  }
+  .auto-margin{
+    margin-top:0px ;
+    height: 400px;
+  }
+.buttonBx {
+  width: 15%;
+  aspect-ratio: 1/1;
+  margin: 20px auto 0;
+  transition: .8s;
+  }
+  .member-card{
+    width: 100%;
+    background-color:#54545422;
+    border-radius: 20px;
+    transition: all 0.8s;
+    box-shadow: 1px 1px 10px #bababa;
+  }
+  .member-span{
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 40px;
+}
+.age{
+  position: absolute;
+  font-size: 15px;
+  font-weight:700;
+  bottom: 10px;
+}
+.member-card:hover .member-text{
+    height: 160px;
+}
+.member-lag{
+  width: 100%;
+  height: 100%;
+}
+.v1{
+  top:-50%
+}
+}
+@media (min-width: 1200px) {
+    .v23{
+    display: flex;
+    width: 25% !important;
+  }
+  .col-lg-self-3{
+    display: flex;
+    align-items: center;
+    width: 99.5% !important;
+  }
+.auto-margin{
+    margin-top:0px ;
+    height: 420px;
+  }
+  .buttonBx {
+  width: 10%;
+  aspect-ratio: 1/1;
+  margin: 20px auto 0;
+  transition: .8s;
+  }
+  .member-card{
+    width: 99.5%;
+    background-color:#54545422;
+    border-radius: 20px;
     transition: all 0.8s;
     box-shadow: 1px 1px 10px #bababa;
   }
@@ -297,7 +445,14 @@ font-weight: 700;
   bottom: 10px;
 }
 .member-card:hover .member-text{
-    height: 338px;
+   height: 270px;
+}
+.member-lag{
+  width: 100%;
+  height: 125%;
+}
+.v1{
+  top:-45%
 }
 }
 

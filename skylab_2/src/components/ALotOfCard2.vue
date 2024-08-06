@@ -1,35 +1,36 @@
 <template>
-  <div class="about">
-    <div class="ceshi3">
-    </div>
-    <div class="ceshi3">
+  <div>
+    <div class="ceshi1">
       <span class="span1"> 未毕业成员 </span>
     </div>
     <div class="buttonBx" @click="auto1(),auto2()">
       <img :src="buttonImg" alt="">
     </div>
-    <div class="ceshi4">
+    <div class="ceshi2">
     </div>
-      <div class="container">
-        <div class="row">
-            <div v-for="item1 in AllMembers1" :key="item1.id1" class="col-lg-3 col-sm-6 auto-margin" id="img2">
-              <div class="member-card">
-                <div class="member-img">
-                  <div class="member-lag"></div>
-                  <div class="v1">
-                      <img :src=" item1.Member[item1.indexx].url1 " alt="">
-                  </div>
-                  <span class="member-span">{{ item1.Member[item1.indexx].name }}</span>
-                  <div class="age">{{item1.id1}}{{item1.Member[item1.indexx].discipline}}</div>
-                </div>
-                <div class="member-text">
-                  <p class="p1">{{ item1.Member[item1.indexx].text }}</p>
-                </div>
+    <div class="container w2">
+      <div class="row">
+        <div v-for="item1 in AllMembers1" :key="item1.id1" class="v23">
+          <div class="w1"></div>
+        <div  class="col-lg-self-3 col-sm-self-6 auto-margin" id="img2">
+          <div class="member-card">
+            <div class="member-img">
+              <div class="member-lag"></div>
+              <div class="v1">
+                  <img :src=" item1.Member[item1.indexx].url1 " alt="">
               </div>
+              <span class="member-span">{{ item1.Member[item1.indexx].name }}</span>
+              <div class="age">{{item1.id1}}{{item1.Member[item1.indexx].discipline}}</div>
             </div>
+            <div class="member-text">
+              <p class="p1">{{ item1.Member[item1.indexx].text }}</p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
-</div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
@@ -113,75 +114,5 @@ const buttonImg = new URL('@/assets/decoration/button.png', import.meta.url).hre
 </script>
 
 <style>
-@keyframes opac-1{
-   0%{opacity: 0;}
-   25%{opacity: 0.25;}
-   50%{opacity: 0.5;}
-   75%{opacity: 0.75;}
-   100%{opacity: 1;}
-  }
-.imgmove{
-  animation: opac-1 0.5s;
-}
-.buttonBx img {
-  width:100%;
-  height:100%;
-}
-.buttonBx:hover {
-  cursor: pointer;
-  transform: rotate(360deg);
-}
-.ceshi3{
-  height: 80px;
-  width: 100%;
-}
-.member-lag{
-  width: 100%;
-  height: 125%;
-}
-.member-img{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    margin-left: 30%;
-    width: 40%;
-    aspect-ratio: 1/1;
-}
-.member-img .v1 img{
-    width: 100%;
-    height: 100%;
-}
-.member-context{
-    text-align: center;
-}
-.member-40{
-  height: 40%;
-  width: 100%;
-}
-.v1{
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    top: -40%;
-    transition: transform 0.8s; /* 添加过渡效果 */
-    transform-origin: center center; /* 设置变换的原点为中心点 */
-}
-.member-card:hover .v1{
-    transform: scale(1.3); /* 均匀扩大50%面积 */
-}
-.member-context .p1{
-    padding: 50px 5px;
-    font-size: 16px;
-}
-.member-text{
-    padding: 0px 20px;
-    height: 0px;
-    overflow: hidden;
-    transition-property:height;
-    transition-duration:0.8s ;
-}
 
 </style>

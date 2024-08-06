@@ -12,7 +12,7 @@ const currentYear = new Date().getFullYear() - 2004
 <template>
   <div class="Totop container">
     <div class="row">
-      <div class="col-md-8 p-3 center1">
+      <div class="col-xl-8 p-3 center1">
           <div class="width08 moveup move-card">
           <div class="littel-star star-0-ud">
             <img src="@/assets/decoration/A4.png" alt="" title="" style="">
@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear() - 2004
           </p>
           </div>
       </div>
-      <div class="col-md-4 p-3 ifshow">
+      <div class="col-xl-4 p-3 ifshow">
         <div class="littel-star-right">
           <img src="@/assets/other/gzs.jpg" alt="" />
         </div>
@@ -37,33 +37,33 @@ const currentYear = new Date().getFullYear() - 2004
       <div class="row">
         <div class="col-md-8 p-4">
           <div class="row">
-            <div class="col-md-4 col-6  ">
-              <div class="h5-spin img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="h5-spin img1 wid1">
                 <img src="@/assets/other/h5.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="css-spin img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="css-spin img1 wid1">
                 <img src="@/assets/other/css.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6  ">
-              <div class="js-spin img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="js-spin img1 wid1">
                 <img src="@/assets/other/javascript.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="vue-spin img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="vue-spin img1 wid1">
                 <img src="@/assets/other/vue.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6  ">
-              <div class="react-roll img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="react-roll img1 wid1">
                 <img src="@/assets/other/react.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="webpack-roll img1">
+            <div class="col-md-12 col-6 col-lg-6 col-xxl-4">
+              <div class="webpack-roll img1 wid1">
                 <img src="@/assets/other/webpack.png" alt="" />
               </div>
             </div>
@@ -103,33 +103,33 @@ const currentYear = new Date().getFullYear() - 2004
         </div>
         <div class="col-md-8 p-4">
           <div class="row">
-            <div class="col-md-4 col-6  ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/c.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/java.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6  ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/go-zero.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/python.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6  ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/centos.png" alt="" />
               </div>
             </div>
-            <div class="col-md-4 col-6 ">
-              <div class="img1 img2">
+            <div class="col-6 col-md-12 col-lg-6 col-xl-4">
+              <div class="img1 img2 wid2">
                 <img src="@/assets/other/nginx.png" alt="" />
               </div>
             </div>
@@ -141,8 +141,9 @@ const currentYear = new Date().getFullYear() - 2004
 <div class="Totop container">
       <div class="row">
         <div class="col-md-8 p-4 ui-img">
-          <div class="Ui-img">
-            <img src="@/assets/decoration/gz.png" alt="" />
+          <div class="Ui-img imgwid1">
+            <img  class="imghidden1" src="@/assets/decoration/gz.png" alt="" />
+            <img class="imghidden" src="@/assets/decoration/A2.png" alt="" />
           </div>
         </div>
         <div class="move-2 col-md-4 p-4 width08 moveup move-card">
@@ -162,6 +163,9 @@ const currentYear = new Date().getFullYear() - 2004
 
 <style>
 @media (max-width: 768px) {
+  .ifshow{
+    display: none;
+  }
   .vw-1{
     padding: 10px;
     font-size: 20px;
@@ -173,14 +177,28 @@ const currentYear = new Date().getFullYear() - 2004
     text-indent: 1.5em;
     text-align: left;
   }
-  .ifshow{
-    display: none;
-  }
   .move-2{
     margin-top: 50px !important;
   }
 }
-@media (min-width: 768px) {
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .imghidden{
+    margin-top: 100px;
+  }
+  .imghidden1{
+    margin-top: 100px;
+  }
+  .wid2{
+    width: 37% !important;
+    margin-left: 150px;
+  }
+  .wid1{
+    width: 47%;
+    margin-left: 120px;
+  }
+  .ifshow{
+    display: none;
+  }
   .vw-1{
     padding: 15px;
     font-size: 36px;
@@ -192,10 +210,78 @@ const currentYear = new Date().getFullYear() - 2004
     text-indent: 2em;
     text-align: left;
   }
+
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .wid2{
+    width: 70% !important;
+    margin-left: 50px;
+  }
+  .ifshow{
+    display: none;
+  }
+  .vw-1{
+    padding: 15px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .vw-2{
+    font-size: 22px;
+    line-height: 40px;
+    text-indent: 2em;
+    text-align: left;
+  }
+  .imghidden{
+    display: block;
+  }
+  .imgwid1{
+    width: 70% !important;
+    margin-left: 80px !important;
+  }
+}
+@media only screen and (max-width: 1399px) and (min-width: 1200px) {
+  .wid1{
+    width: 80% !important;
+  }
   .ifshow{
     display: block;
   }
+  .vw-1{
+    padding: 15px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .vw-2{
+    font-size: 22px;
+    line-height: 40px;
+    text-indent: 2em;
+    text-align: left;
+  }
+  .imghidden{
+    display: none;
+  }
 }
+
+@media (min-width: 1400px) {
+  .ifshow{
+    display: block;
+  }
+  .vw-1{
+    padding: 15px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .vw-2{
+    font-size: 22px;
+    line-height: 40px;
+    text-indent: 2em;
+    text-align: left;
+  }
+  .imghidden{
+    display: none;
+  }
+}
+
 .img2 {
   transition: transform 0.5s;
 }
@@ -226,7 +312,6 @@ const currentYear = new Date().getFullYear() - 2004
 }
 .img1 img{
   width: 100%;
-  height: auto;
 }
 .center1{
   text-align: center;
@@ -242,6 +327,7 @@ const currentYear = new Date().getFullYear() - 2004
 }
 .Totop{
   margin-top: 4vw;
+  max-width: 320px;
 }
 
 .littel-star-right{
