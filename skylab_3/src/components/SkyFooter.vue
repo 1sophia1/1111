@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style>
+.footer-1 p a{
+    text-decoration: none;
+}
 .footer-1 {
     padding: 30px 0 0 0;
     font-size: 14px;
